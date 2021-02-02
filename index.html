@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- Fonts from font.google.com -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lucida Sans">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Showcard Gothic">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Bubblegum+Sans&family=Overlock+SC&display=swap" rel="stylesheet">
+    <!-- Html formal link tag to stylesheet -->
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <div class="page_wrapper">
+        <header>
+            <div class="header_container">
+                <div class="header_header">
+                    <nav>
+                        <div class="container">
+                            <div class="logo_wrapper">
+                                <img src="svg/logo.svg" alt="">
+                            </div>
+                            <div class="menu_icon menu-icon--display">
+                                <img src="svg/menu_icon.png" alt="">
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+                <div class="header_banner">
+                    <div class="container">
+                        <div class="banner_item banner_item--flex-order-1 banner_title--mobile">
+                            <h2>Fight to victory on...</h2>
+                            <h1>BARON FIGHT</h1>
+                        </div>
+                        <div class="banner_item banner_item--flex-order-2 banner_item--hidden">
+                            <img src="img/MAX_3.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <div class="content_wrapper">
+                <section>
+                    <div class="container">
+                        <div class="content_row content_row--flex content_row--block">
+                            <div class="row_block_one flex_column_one">
+                                <div id="story_block">
+                                    <!-- Arg... Just formed a dumb story for your project -->
+                                    <p>
+                                        Once upon a time, A very long time ago, the earth was formed perfectly
+                                        and without sin by an unseen man. This man lives but not around us,
+                                        neither here on earth. The humans worshipped and praised him. But one day, 
+                                        the sky shot out a gigantic rocket the flew over the trees and landed down
+                                        upon a desolate place. and behold a might monster stumped out! Now, the whole 
+                                        earth is in panic and fear... The Beast has ARRIVED... His Name is BARON...
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="row_block_one flex_column_two">
+                                <div class="img_block">
+                                    <img src="img/DRAGON.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- content_row class wraps a new block of content... therefore this is another content -->
+                        <div class="content_row content_row--flex-j">
+                            <div id="about_block">
+                                <h2>About Game</h2>
+                                <p>
+                                    <strong>
+                                        To defeat Baron, you have to buy a  
+                                        warrior with your RIOT POINTS.
+                                    </strong>
+                                </p>
+
+                                <p>
+                                    <strong>
+                                        By clicking repeatedly on the button below the 
+                                        RIOT POINT, your point increases. You definitely can 
+                                        click as many times as you want in 
+                                        order to buy a warrior.
+                                    </strong>
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="content_row content_row--flex-j">
+                            <div id="riot_point" class="counter_box">
+                                <div class="counter_title">
+                                    <h2>RIOT POINT</h2>
+                                </div>
+                                <div class="counter">
+
+                                    <!-- Hey bro. i'm gonna leave this to you to use javascript to manipulate the counter's
+                                    child element. Use the child element id to manipulate the output of its content -->
+                                    <div id="point">30</div>
+                                </div>
+
+                                <!-- I found out ealier in your previous codes that you like using buttons to create triggers
+                                     to some content. so i'm gonna play along by adding them to this HTML markup ;)-->
+                                <button>1X Riot Points</button>
+                            </div>
+                        </div>
+                    </div>
+            </section>
+
+            <!-- Creating a new section that wraps a seperate content...   -->
+            <section class="section_">
+                <div class="container">
+                    <div class="section_title">
+                        <h2>Select your warrior</h2>
+                    </div>
+                    <div class="wrapper">
+
+                        <!-- COLUMN ONE -->
+                        <div class="wrapper_item">
+
+                            <!-- CARD CONTAINER ONE... **Seerated all cards into containers to achieve a chronological 
+                                order of arrangement...** -->
+                            <div class="card_container">
+
+                                <!-- Card one -->
+                                <div class="card" id="warrior_img">
+                                    <div class="img_box">
+                                        <img src="img/MAX_2.png" alt="">
+                                    </div>
+
+                                    <div class="name" id="warrior_name">
+                                        <span>Lex Luthur</span>
+                                    </div>
+                                </div>
+
+                                <!-- Card two -->
+                                <div class="card" id="warrior_profile">
+                                    <div class="card_content_wrapper">
+
+                                        <!-- Card information goes in here -->
+                                        <div class="card_info">
+
+                                            <!-- i used variable to donate number... **sorry...**-->
+                                            <p>Cost: <span id="variable">20</span></p>
+                                            <p>Damage: <span id="variable">50</span></p>
+                                            <p>Production: <span id="variable">0.5</span></p>
+                                            <div class="btn_grp_one">
+                                                <button class="purchase">BUY 1X LEX LUTHUR</button>
+                                                <button class="purchase">BUY 5X LEX LUTHUR</button>
+                                            </div>
+                                            <div class="btn_grp_two">
+                                                <button class="upgrade">UPGRADE 1000</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                            <!-- CARD CONTAINER TWO... **Seerated all cards into containers to achieve a chronological 
+                                order of arrangement...** -->
+                            <div class="card_container">
+
+                                <!-- Card one -->
+                                <div class="card" id="warrior_img">
+                                    <div class="img_box">
+                                        <img src="img/MAX_3.png" alt="">
+                                    </div>
+
+                                    <div class="name" id="warrior_name">
+                                        <span>Lex Luthur</span>
+                                    </div>
+                                </div>
+
+                                <!-- Card two -->
+                                <div class="card" id="warrior_profile">
+                                    <div class="card_content_wrapper">
+
+                                        <!-- Card information goes in here -->
+                                        <div class="card_info">
+
+                                            <!-- i used variable to donate number... **sorry...**-->
+                                            <p>Cost: <span id="variable">20</span></p>
+                                            <p>Damage: <span id="variable">50</span></p>
+                                            <p>Production: <span id="variable">0.5</span></p>
+                                            <div class="btn_grp_one">
+                                                <button class="purchase">BUY 1X LEX LUTHUR</button>
+                                                <button class="purchase">BUY 5X LEX LUTHUR</button>
+                                            </div>
+                                            <div class="btn_grp_two">
+                                                <button class="upgrade">UPGRADE 1000</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                             <!-- CARD CONTAINER THREE... **Seerated all cards into containers to achieve a chronological 
+                                order of arrangement...** -->
+                            <div class="card_container">
+
+                                <!-- Card one -->
+                                <div class="card" id="warrior_img">
+                                    <div class="img_box">
+                                        <img src="img/RICK_2.jpg" alt="">
+                                    </div>
+
+                                    <div class="name" id="warrior_name">
+                                        <span>Lex Luthur</span>
+                                    </div>
+                                </div>
+
+                                <!-- Card two -->
+                                <div class="card" id="warrior_profile">
+                                    <div class="card_content_wrapper">
+
+                                        <!-- Card information goes in here -->
+                                        <div class="card_info">
+
+                                            <!-- i used variable to donate number... **sorry...**-->
+                                            <p>Cost: <span id="variable">20</span></p>
+                                            <p>Damage: <span id="variable">50</span></p>
+                                            <p>Production: <span id="variable">0.5</span></p>
+                                            <div class="btn_grp_one">
+                                                <button class="purchase">BUY 1X LEX LUTHUR</button>
+                                                <button class="purchase">BUY 5X LEX LUTHUR</button>
+                                            </div>
+                                            <div class="btn_grp_two">
+                                                <button class="upgrade">UPGRADE 1000</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <!-- CARD CONTAINER FOUR... **Seerated all cards into containers to achieve a chronological 
+                                order of arrangement...** -->
+                            <div class="card_container">
+
+                                <!-- Card one -->
+                                <div class="card" id="warrior_img">
+                                    <div class="img_box">
+                                        <img src="img/RICK_3.png" alt="">
+                                    </div>
+
+                                    <div class="name" id="warrior_name">
+                                        <span>Lex Luthur</span>
+                                    </div>
+                                </div>
+
+                                <!-- Card two -->
+                                <div class="card" id="warrior_profile">
+                                    <div class="card_content_wrapper">
+
+                                        <!-- Card information goes in here -->
+                                        <div class="card_info">
+
+                                            <!-- i used variable to donate number... **sorry...**-->
+                                            <p>Cost: <span id="variable">20</span></p>
+                                            <p>Damage: <span id="variable">50</span></p>
+                                            <p>Production: <span id="variable">0.5</span></p>
+                                            <div class="btn_grp_one">
+                                                <button class="purchase">BUY 1X LEX LUTHUR</button>
+                                                <button class="purchase">BUY 5X LEX LUTHUR</button>
+                                            </div>
+                                            <div class="btn_grp_two">
+                                                <button class="upgrade">UPGRADE 1000</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <!-- CARD CONTAINER FIVE... **Seerated all cards into containers to achieve a chronological 
+                                order of arrangement...** -->
+                            <div class="card_container">
+
+                                <!-- Card one -->
+                                <div class="card" id="warrior_img">
+                                    <div class="img_box">
+                                        <img src="img/SAM_2.png" alt="">
+                                    </div>
+
+                                    <div class="name" id="warrior_name">
+                                        <span>Lex Luthur</span>
+                                    </div>
+                                </div>
+
+                                <!-- Card two -->
+                                <div class="card" id="warrior_profile">
+                                    <div class="card_content_wrapper">
+
+                                        <!-- Card information goes in here -->
+                                        <div class="card_info">
+
+                                            <!-- i used variable to donate number... **sorry...**-->
+                                            <p>Cost: <span id="variable">20</span></p>
+                                            <p>Damage: <span id="variable">50</span></p>
+                                            <p>Production: <span id="variable">0.5</span></p>
+                                            <div class="btn_grp_one">
+                                                <button class="purchase">BUY 1X LEX LUTHUR</button>
+                                                <button class="purchase">BUY 5X LEX LUTHUR</button>
+                                            </div>
+                                            <div class="btn_grp_two">
+                                                <button class="upgrade">UPGRADE 1000</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- COLUMN TWO -->
+                        <div class="wrapper_item">
+
+                                <!-- CARD CONTAINER SIX... **Seerated all cards into containers to achieve a chronological 
+                                    order of arrangement...** -->
+                                <div class="card_container">
+
+                                    <!-- Card one -->
+                                    <div class="card" id="warrior_img">
+                                        <div class="img_box">
+                                            <img src="img/SAM.png" alt="">
+                                        </div>
+
+                                        <div class="name" id="warrior_name">
+                                            <span>Lex Luthur</span>
+                                        </div>
+                                    </div>
+
+                                    <!-- Card two -->
+                                    <div class="card" id="warrior_profile">
+                                        <div class="card_content_wrapper">
+
+                                            <!-- Card information goes in here -->
+                                            <div class="card_info">
+
+                                                <!-- i used variable to donate number... **sorry...**-->
+                                                <p>Cost: <span id="variable">20</span></p>
+                                                <p>Damage: <span id="variable">50</span></p>
+                                                <p>Production: <span id="variable">0.5</span></p>
+                                                <div class="btn_grp_one">
+                                                    <button class="purchase">BUY 1X LEX LUTHUR</button>
+                                                    <button class="purchase">BUY 5X LEX LUTHUR</button>
+                                                </div>
+                                                <div class="btn_grp_two">
+                                                    <button class="upgrade">UPGRADE 1000</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <!-- CARD CONTAINER SEVEN... **Seerated all cards into containers to achieve a chronological 
+                                    order of arrangement...** -->
+                                <div class="card_container">
+
+                                    <!-- Card one -->
+                                    <div class="card" id="warrior_img">
+                                        <div class="img_box">
+                                            <img src="img/MAX.jpg" alt="">
+                                        </div>
+
+                                        <div class="name" id="warrior_name">
+                                            <span>Lex Luthur</span>
+                                        </div>
+                                    </div>
+
+                                    <!-- Card two -->
+                                    <div class="card" id="warrior_profile">
+                                        <div class="card_content_wrapper">
+
+                                            <!-- Card information goes in here -->
+                                            <div class="card_info">
+
+                                                <!-- i used variable to donate number... **sorry...**-->
+                                                <p>Cost: <span id="variable">20</span></p>
+                                                <p>Damage: <span id="variable">50</span></p>
+                                                <p>Production: <span id="variable">0.5</span></p>
+                                                <div class="btn_grp_one">
+                                                    <button class="purchase">BUY 1X LEX LUTHUR</button>
+                                                    <button class="purchase">BUY 5X LEX LUTHUR</button>
+                                                </div>
+                                                <div class="btn_grp_two">
+                                                    <button class="upgrade">UPGRADE 1000</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <!-- CARD CONTAINER EIGHT... **Seerated all cards into containers to achieve a chronological 
+                                    order of arrangement...** -->
+                                <div class="card_container">
+
+                                    <!-- Card one -->
+                                    <div class="card" id="warrior_img">
+                                        <div class="img_box">
+                                            <img src="img/SAM_3.png" alt="">
+                                        </div>
+
+                                        <div class="name" id="warrior_name">
+                                            <span>Lex Luthur</span>
+                                        </div>
+                                    </div>
+
+                                    <!-- Card two -->
+                                    <div class="card" id="warrior_profile">
+                                        <div class="card_content_wrapper">
+
+                                            <!-- Card information goes in here -->
+                                            <div class="card_info">
+
+                                                <!-- i used variable to donate number... **sorry...**-->
+                                                <p>Cost: <span id="variable">20</span></p>
+                                                <p>Damage: <span id="variable">50</span></p>
+                                                <p>Production: <span id="variable">0.5</span></p>
+                                                <div class="btn_grp_one">
+                                                    <button class="purchase">BUY 1X LEX LUTHUR</button>
+                                                    <button class="purchase">BUY 5X LEX LUTHUR</button>
+                                                </div>
+                                                <div class="btn_grp_two">
+                                                    <button class="upgrade">UPGRADE 1000</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                                <!-- CARD CONTAINER NINE... **Seerated all cards into containers to achieve a chronological 
+                                    order of arrangement...** -->
+            </section>
+            </div>
+        </main>
+    </div>
+</body>
+</html>
