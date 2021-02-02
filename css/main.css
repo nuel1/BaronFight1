@@ -410,6 +410,16 @@ section.section_ .section_title h2 {
   .wrapper .wrapper_item {
     flex: 0 1 50%;
   }
+
+  .card_container #warrior_profile {
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+
+  .card_info p {
+    text-align: left;
+  }
 }
 @media (min-width: 1301px) {
   .container {
